@@ -407,7 +407,7 @@ setOnClickListener(1);//设置单击监听器，参数是实现了onClick(2)方�
 								    线段类，可以作为Entity加入场景
 								</p>
 								<pre>
-Line(x1, y1, x2, y2, width);//构造函数
+Line(x1, y1, x2, y2, width);//构造函数，至少在loadScene接口执行后才能构造矩形实例
 setColor(r, g, b);//设置颜色
 setPosition(x1, y1, x2, y2);//设置位置
 getX1(0);
@@ -418,12 +418,12 @@ getWidth(0);
 setVisible(1);设置是否可见
 								</pre>
 								
-							    <h4>Rect 类</h4>
+							    <h4>Rectangle 类</h4>
 								<p>
 								    矩形类，可以作为Entity加入场景
 								</p>
 								<pre>
-Rect(x1, y1, width, height);//构造函数
+Rectangle(x1, y1, width, height);//构造函数，至少在loadScene接口执行后才能构造矩形实例
 setColor(r, g, b);//设置颜色
 setPosition(x, y);//设置位置
 getX(0);
