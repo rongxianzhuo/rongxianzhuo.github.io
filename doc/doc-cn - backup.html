@@ -34,7 +34,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<h1 class="intro-lead">HelloWorld帮助文档（V3.5）</h1>
+						<h1 class="intro-lead">HelloWorld帮助文档</h1>
 					</div>
 				</div>
 			</div>
@@ -43,10 +43,33 @@
 		<div id="fh5co-content">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-10 col-md-offset-1">
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-3 animate-box">
+								<h3>目录</h3>
+								<ul>
+									<li><a href="#jj">简介</a></li>
+									<li><a href="#mcjs">名词解释</a></li>
+									<li><a href="#jbyf">基本用法</a></li>
+									<li><a href="#bl">变量</a></li>
+									<li><a href="#zyy">作用域</a></li>
+									<li><a href="#dx">对象（类）</a></li>
+									<li><a href="#yslwd">原生类文档</a></li>
+									<li><a href="#number">Number</a></li>
+									<li><a href="#string">String</a></li>
+									<li><a href="#list">List</a></li>
+									<li><a href="#pattern">Pattern</a></li>
+									<li><a href="#matcher">Matcher</a></li>
+									<li><a href="#system">System</a></li>
+									<li><a href="#hfile">HFile</a></li>
+									<li><a href="#httputils">HttpUtils</a></li>
+									<li><a href="#jsonobject">JSONObject</a></li>
+									<li><a href="#jsonarray">JSONArray</a></li>
+								</ul>
+							</div>
+							<div class="col-md-9">
 							
+								<a name="jj"></a>
 							    <h2>简介</h2>
 								<p>
 								    HelloWorld是一款解释器工具类App （以下简称App），它能让用户编辑并运行一段脚本语言。
@@ -54,6 +77,7 @@
 									如果你学习过Java语言，或许通过App上的示例就可以完全掌握HelloWorld的语法。
 								</p>
 								
+								<a name="mcjs"></a>
 							    <h2>名词解释</h2>
 								<p>
 								    类库：每一个App拥有一个类库，用户可以在类库中保存若干个不重名的类。
@@ -73,6 +97,7 @@
 								    程序：程序是App可以运行的基本单元，由一个或多个类组成。
 								</p>
 								
+								<a name="jbyf"></a>
 							    <h2>基本用法</h2>
 								<p>
 								    在编写程序的时候有一些基本规则，除了不要定义非法或重复的类名外，所有的包括import的类至少要有一个类拥有入口方法main()，它的定义方法如下：
@@ -94,6 +119,7 @@ class Program  {
 }
 								</pre>
 								
+								<a name="bl"></a>
 							    <h2>变量</h2>
 								<p>
 								    变量可以保存数值，它在代码中的表现形式是一个合法的变量名。
@@ -108,6 +134,7 @@ class Program  {
 								    程序中所有要引用的类名也不能成为变量名。
 								</p>
 								
+								<a name="zyy"></a>
 							    <h2>作用域</h2>
 								<p>
 								    所有变量都有作用域，作用域是变量所在的代码块内，一般的，一对大括号包含一个代码块。
@@ -134,6 +161,7 @@ class Person {
 								    如果一个变量如果没有进行初始化，变量的值为null。
 								</p>
 								
+								<a name="dx"></a>
 							    <h2>对象（类）</h2>
 								<p>
 								    程序由类组成，就像现实世界有很多对象组成。一个对象有各种属性和方法。例如：一个人是一个对象，有性别和年龄属性，有走路和说话的方法。
@@ -272,16 +300,19 @@ class Demo {
 }
 								</pre>
 							
+								<a name="yslwd"></a>
 							    <h2>原生类文档</h2>
 								<p>
 								    下面介绍所有原生类的方法，方法名后面的括号内的数字代表参数个数。
 								</p>
 								
+								<a name="number"></a>
 							    <h4>Number 类</h4>
 								<pre>
 toInteger(0);//获得数字强转为整型的结果
 								</pre>
 								
+								<a name="string"></a>
 							    <h4>String 类</h4>
 								<pre>
 String(0);//创建一个空字符串实例
@@ -298,6 +329,7 @@ startsWith(1);//同Java中的String.startsWith(int);
 endsWith(1);//同Java中的String.endsWith(int);
 								</pre>
 								
+								<a name="list"></a>
 							    <h4>List 类</h4>
 								<p>
 								    列表 它支持用 '[]' 来操作，如： l = [];//创建空链表 l = [1, 'c', "string"];//创建有初始值的链表 l[1] = 998;//设置链表的某项
@@ -310,6 +342,7 @@ size(0);//获取链表长度
 add(1);//向链表尾部增加新的一项
 								</pre>
 								
+								<a name="pattern"></a>
 							    <h4>Pattern 类</h4>
 								<p>
 								    正则表达式Pattern类
@@ -320,6 +353,7 @@ Pattern(2);//构造函数，同上，但是第二个参数是布尔型，代表�
 matcher(1);//同Java 的 Pattern.matcher(String)方法，返回一个Matcher实例
 								</pre>
 								
+								<a name="matcher"></a>
 							    <h4>Matcher 类</h4>
 								<p>
 								    正则表达式Matcher类
@@ -330,6 +364,7 @@ group(1);//同Java 的 Matcher.group(int)
 find(0);//同Java 的 Matcher.find();
 								</pre>
 								
+								<a name="system"></a>
 							    <h4>System 类</h4>
 								<p>
 								    系统类
@@ -338,16 +373,15 @@ find(0);//同Java 的 Matcher.find();
 static input(0);//等待并返回用户输入的字符串
 static print(1);//打印一个字符串，参数就是要打印的字符串
 static printWebImage(1);//打印一个网络图片，参数是url
-static toast(1);//显示一个短暂的信息提示，参数是要显示的字符串
-static startAnimActivity(3);//进入动画显示界面，第一个参数是一个实现的loadScene(0)方法的实例，loadScene(0)必须返回一个Scene实例，第二个参数是动画界面宽度（像素），第三个是动画界面高度（像素）
 								</pre>
 								
-							    <h4>File 类</h4>
+								<a name="hfile"></a>
+							    <h4>HFile 类</h4>
 								<p>
 								    手机文件类
 								</p>
 								<pre>
-File(1);//构造方法，参数是文件路径
+HFile(1);//构造方法，参数是文件路径
 getName(0);//获取文件名
 getPath(0);//获取文件路径
 listFiles(0);//如果是文件夹，返回文件夹下所有的文件 List
@@ -357,6 +391,7 @@ rename(1);//文件或文件夹重命名，参数是目标文件名，返回是�
 delete(0);//删除文件或空目录，返回是否成功
 								</pre>
 								
+								<a name="httputils"></a>
 							    <h4>HttpUtils 类</h4>
 								<p>
 								    网络访问工具类
@@ -366,6 +401,7 @@ static getString(1);//获取访问所得字符串，具体参考 com.squareup.ok
 static downloadFile(2);//下载一个网络文件，第一个参数是url，第二个是完整的目标文件路径，返回是否成功。因为还没有完善的下载管理，建议下载小文件。
 								</pre>
 								
+								<a name="jsonobject"></a>
 							    <h4>JSONObject 类</h4>
 								<pre>
 JSONObject(1);//构造函数，同Java 的 JSONObject(String)
@@ -375,6 +411,7 @@ getJSONObject(1);//同Java 的 JSONObject.getJSONObject(String)
 getJSONArray(1);//同Java 的 JSONObject.getJSONArray(String)
 								</pre>
 								
+								<a name="jsonarray"></a>
 							    <h4>JSONArray 类</h4>
 								<pre>
 JSONArray(1);//构造函数，同Java 的 JSONArray(String)
@@ -383,47 +420,6 @@ getNumber(1);//同Java 的 JSONObject.getDouble(int)
 getJSONObject(1);//同Java 的 JSONObject.getJSONObject(int)
 getJSONArray(1);//同Java 的 JSONObject.getJSONArray(int)
 length(0);//同Java 的 JSONObject.length()
-								</pre>
-								
-							    <h4>Scene 类</h4>
-								<p>
-								    场景类，在动画界面使用。
-								</p>
-								<pre>
-Scene(0);//构造函数
-addEntity(1);//向该场景添加一个物体，目前只支持Line、和Rect两种
-setBackground(3);//设置场景背景颜色，三个参数从左到右分别是红绿蓝分量，取值范围是0~1
-setUpdateHandler(1);//设置刷新监听器，参数是实现了onUpdate(0)方法的实例，动画引擎每一帧开始都会调用onUpdate(0)方法
-setOnClickListener(1);//设置单击监听器，参数是实现了onClick(2)方法的实例，用户每一次点击场景系统都会调用onClick(2)方法，onClick(2)方法的两个参数分别是点击的x坐标和y坐标
-								</pre>
-								
-							    <h4>Line 类</h4>
-								<p>
-								    线段类，可以作为Entity加入场景
-								</p>
-								<pre>
-Line(x1, y1, x2, y2, width);//构造函数
-setColor(r, g, b);//设置颜色
-setPosition(x1, y1, x2, y2);//设置位置
-getX1(0);
-getY1(0);
-getX2(0);
-getY2(0);
-getWidth(0);
-								</pre>
-								
-							    <h4>Rect 类</h4>
-								<p>
-								    矩形类，可以作为Entity加入场景
-								</p>
-								<pre>
-Rect(x1, y1, width, height);//构造函数
-setColor(r, g, b);//设置颜色
-setPosition(x, y);//设置位置
-getX(0);
-getY(0);
-getWidth(0);
-getHeight(0);
 								</pre>
 								
 							</div>
