@@ -49,7 +49,7 @@
 							
 							    <h2>提示</h2>
 								<p>
-								    在使用手机浏览的时候建议关掉“适应屏幕”选项。该文档只适用于3.8以上版本。
+								    在使用手机浏览的时候建议关掉“适应屏幕”选项。该文档只适用于3.9.1以上版本。
 								</p>
 							
 							    <h2>简介</h2>
@@ -315,6 +315,17 @@ size(0);//获取链表长度
 add(1);//向链表尾部增加新的一项
 								</pre>
 								
+							    <h4>Map 类</h4>
+								<p>
+								    集合类，可以保存若干个键值对。在集合里，一个键值对包含一个字符串Key和这个Key对应的值（任意类型的实例）；其本质是Java中的HashMap<String, Instance>。
+								</p>
+								<pre>
+Map(0);//构造函数,构造一个空集合
+get(1);//获取集合中某键值对的值，参数是键值对的Key字符串。
+put(2);//向集合增加键值对，如果集合中已经存在相应有Key的键值对，则覆盖键值对。
+size(0);//获取集合当前容量
+								</pre>
+								
 							    <h4>Pattern 类</h4>
 								<p>
 								    正则表达式Pattern类
@@ -346,6 +357,7 @@ static printWebImage(1);//打印一个网络图片，参数是url
 static toast(1);//显示一个短暂的信息提示，参数是要显示的字符串
 static sleep(1);//暂停一段时间后继续往后运行，参数为暂停时间，单位是毫秒
 static startAnimActivity(3);//进入动画显示界面，第一个参数是一个实现的loadScene(0)方法的实例，loadScene(0)必须返回一个Scene实例，第二个参数是动画界面宽度（像素），第三个是动画界面高度（像素）
+static showInputDialog(1);//显示一个输入框让用户输入字符串，参数是一个实现了input(1)方法的类实例，当用户按确定按钮后，系统会调用input(1)方法并将字符串作为参数传递过来。
 								</pre>
 								
 							    <h4>File 类</h4>
@@ -370,7 +382,8 @@ read(0);//读取文件，返回字符列表
 								    网络访问工具类
 								</p>
 								<pre>
-static getString(1);//获取访问所得字符串，具体参考 com.squareup.okhttp.Response.body().string();
+static getString(1);//获取访问所得的结果的字符串形态，参数为完整url
+static getStringByPost(2);//利用post传参的方法获取访问的结果的字符串形态，第一个参数为完整url，第二个是需要post传参的参数集合（Map）
 static downloadFile(2);//下载一个网络文件，第一个参数是url，第二个是完整的目标文件路径，返回是否成功。因为还没有完善的下载管理，建议下载小文件。
 								</pre>
 								
@@ -413,11 +426,11 @@ setOnClickListener(1);//设置单击监听器，参数是实现了onClick(2)方�
 Line(x1, y1, x2, y2, width);//构造函数，至少在loadScene接口执行后才能构造矩形实例
 setColor(r, g, b);//设置颜色
 setPosition(x1, y1, x2, y2);//设置位置
-getX1(0);
-getY1(0);
-getX2(0);
-getY2(0);
-getWidth(0);
+getX1(0);获取第一个端点的X坐标
+getY1(0);获取第一个端点的Y坐标
+getX2(0);获取第二个端点的X坐标
+getY2(0);获取第二个端点的Y坐标
+getWidth(0);获取线段宽度
 setVisible(1);设置是否可见
 								</pre>
 								
@@ -429,10 +442,10 @@ setVisible(1);设置是否可见
 Rectangle(x1, y1, width, height);//构造函数，至少在loadScene接口执行后才能构造矩形实例
 setColor(r, g, b);//设置颜色
 setPosition(x, y);//设置位置
-getX(0);
-getY(0);
-getWidth(0);
-getHeight(0);
+getX(0);获取举行X坐标
+getY(0);获取举行Y坐标
+getWidth(0);获取矩形宽度
+getHeight(0);获取矩形高度
 setVisible(1);设置是否可见
 								</pre>
 								
